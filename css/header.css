@@ -1,0 +1,90 @@
+/* Стилі для шапки */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__logo span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.icon {
+  width: 24px; /* Розмір іконки */
+  height: 24px;
+}
+
+/* Іконка меню */
+.btn-menu-container {
+  display: flex;
+}
+
+.vector-input-btn {
+  display: none; /* Ховаємо чекбокс */
+}
+
+.vector-label-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 28px; /* Ширина іконки */
+  height: 28px; /* Висота іконки */
+  cursor: pointer;
+}
+
+.vector-btn {
+  position: relative;
+}
+
+.vector-btn,
+.vector-btn::before,
+.vector-btn::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px; /* Висота ліній */
+  background-color: var(--black); /* Колір ліній */
+  transition: 0.3s; /* Анімація для зміни стану */
+}
+
+.vector-btn::before,
+.vector-btn::after {
+  position: absolute;
+}
+
+.vector-btn::before {
+  top: -7px;
+}
+
+.vector-btn::after {
+  top: 7px;
+}
+
+/* Анімація на відкриття/закриття меню */
+.vector-input-btn:checked + .vector-label-btn .vector-btn {
+  background-color: transparent; /* Середня лінія зникає */
+}
+
+.vector-input-btn:checked + .vector-label-btn .vector-btn::before {
+  transform: rotate(45deg); /* Поворот верхньої лінії */
+  top: 0;
+}
+
+.vector-input-btn:checked + .vector-label-btn .vector-btn::after {
+  transform: rotate(-45deg); /* Поворот нижньої лінії */
+  top: 0;
+}
