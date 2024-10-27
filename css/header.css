@@ -12,20 +12,24 @@
   height: 68px;
 }
 
-.header__logo {
+.header-logo {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
 }
 
-.header__logo span {
-  font-weight: bold;
-  font-size: 16px;
+.header-logo span {
+  font-style: italic;
+  letter-spacing: 0.04em;
 }
 
-.icon {
-  width: 24px; /* Розмір іконки */
-  height: 24px;
+.logo-link {
+  text-transform: uppercase;
+  display: flex;
+  gap: 4px;
 }
 
 /* Іконка меню */

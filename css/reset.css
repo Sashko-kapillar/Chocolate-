@@ -9,6 +9,7 @@ html {
 }
 
 :root {
+  --font-family: "Montserrat", sans-serif;
   --black: #111;
   --orange: #fd9222;
   --violet: #1e1823;
@@ -21,7 +22,7 @@ html {
 
 body {
   background-color: var(--bg-white);
-  font-family: "Gilroy", sans-serif;
+  font-family: var(--font-family);
   color: var(--black);
 }
 

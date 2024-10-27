@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot"); /* Для IE8 і старіших */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    /* сучасні браузери */ url("../fonts/Montserrat-Regular.woff")
+      format("woff"),
+    /* браузери з підтримкою WOFF */ url("../fonts/Montserrat-Regular.ttf")
+      format("truetype"); /* старіші браузери */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("Montserrat Semibold"), local("Montserrat-Semibold"),
+    url("Montserrat-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Semibold.woff2") format("woff2"),
+    url("Montserrat-Semibold.woff") format("woff"),
+    url("Montserrat-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Medium.woff2") format("woff2"),
+    url("Montserrat-Medium.woff") format("woff"),
+    url("Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
