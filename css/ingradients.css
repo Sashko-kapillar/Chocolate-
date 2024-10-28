@@ -38,39 +38,50 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 15px;
-}
-
-.card-bg-orange {
-  background-color: var(--orange); /* Задає колір фону для переднього боку */
-}
-
-.card-bg-violet {
-  background-color: var(--violet);
-}
-
-.card-bg-white {
-  background-color: var(--white-2);
+  border-radius: 16px;
 }
 
 .flip-card-back {
   background-color: var(--white-2); /* Задає колір фону для зворотного боку */
   transform: rotateY(180deg); /* Повертає зворотний бік на 180 градусів */
+  padding: 28px;
+  justify-content: start;
 }
 
 .card-image {
   width: 80%;
-  height: auto;
   border-radius: 10px;
 }
 
 .card-title {
-  font-weight: 600;
-  font-size: 18px;
-  margin-top: 15px;
-  color: var(--black);
+  font: 600 14px / 1.29 var(--font-family);
+  letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-top: 16px;
   margin-right: auto;
+}
+
+.flip-card-back {
+  align-items: start;
+}
+
+.card-title-back {
+  margin-bottom: 8px;
+}
+
+.card-bg-orange {
+  background-color: var(--orange);
+  color: var(--white-2);
+}
+
+.card-bg-violet {
+  background-color: var(--violet);
+  color: var(--white-2);
+}
+
+.card-bg-white {
+  background-color: var(--white-2);
+  border: 1px solid var(--orange);
 }
 
 .card-arrow {
@@ -87,6 +98,14 @@
   fill: var(--white-2);
   animation: scroll 1s infinite;
   position: relative;
+}
+
+.card-arrow-orange {
+  border: 1px solid var(--orange);
+}
+
+.card-arrow-orange .card-icon-arrow {
+  fill: var(--orange);
 }
 
 @keyframes scroll {
@@ -106,7 +125,8 @@
   margin-bottom: 10px;
 }
 
-.card-tag {
+.card-tag,
+.card-tag-2 {
   background-color: var(--orange);
   padding: 5px 10px;
   border-radius: 15px;
@@ -114,8 +134,13 @@
   font-size: 12px;
 }
 
+.card-tag-2 {
+  background-color: var(--white);
+  border: 1px solid var(--orange);
+  color: inherit;
+}
+
 .card-description {
-  font-size: 14px;
-  color: var(--gray);
-  text-align: center;
+  font: 400 14px / 1.29 var(--font-family);
+  letter-spacing: -0.02em;
 }
