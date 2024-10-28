@@ -1,0 +1,93 @@
+.hero-section {
+  color: var(--white-2); /* Глобальний колір тексту */
+}
+
+.hero-container {
+  background-image: url("../images/chocolate_main-mob-1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-title {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--orange); /* Глобальний колір для кнопки */
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--white-2);
+  border: 2px solid var(--white-2);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+}
+
+.scroll-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+  border: 2px solid var(--white-2);
+  border-radius: 50%;
+  position: relative;
+}
+
+.scroll-icon span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--white-2);
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    top: 6px;
+  }
+  100% {
+    opacity: 0;
+    top: 12px;
+  }
+}
