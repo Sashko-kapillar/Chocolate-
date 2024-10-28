@@ -93,13 +93,7 @@
   animation: scroll 1s infinite;
 }
 
-.scroll-down {
-  fill: var(--orange);
-  animation: scroll 1s infinite;
-  position: relative;
-}
-
-@keyframes scroll {
+@keyframes scroll-animation {
   0% {
     opacity: 1;
     top: 6px;
@@ -108,4 +102,10 @@
     opacity: 0.1;
     top: 12px;
   }
+}
+
+.scroll-down {
+  fill: var(--orange);
+  animation: scroll-animation 1s infinite;
+  position: relative;
 }
