@@ -27,7 +27,6 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 16px;
   width: 335px;
-  height: 364px;
 }
 
 .product-images {
@@ -37,21 +36,25 @@
 }
 
 .product-name {
-  margin: 10px 0 5px;
   text-transform: uppercase;
 }
 
 .product-description {
   font-size: 14px;
   color: var(--gray); /* Глобальний колір для опису */
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .product-price {
-  font-size: 16px;
-  font-weight: 600; /* SemiBold */
-  color: var(--orange); /* Глобальний акцентний колір */
-  padding: 5px 10px;
+  font: 600 14px var(--font-family);
+  padding: 8px 20px;
   background-color: var(--bg-white);
-  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-price:hover,
+.product-price:focus {
+  background-color: var(--orange);
 }
