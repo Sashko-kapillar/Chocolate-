@@ -1,0 +1,47 @@
+.how-made-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-made-title {
+  margin-bottom: 32px;
+}
+
+.text-accent {
+  color: var(--orange); /* Глобальний акцентний колір */
+}
+
+.how-made-image-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.how-made-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.how-made-description {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.how-made-text-container {
+  padding: 20px 14px;
+}
+
+.how-made-subtitle {
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+
+.how-made-steps-list {
+  flex-direction: column;
+  list-style: disc;
+  gap: 20px;
+}
