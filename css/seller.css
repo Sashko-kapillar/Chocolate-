@@ -33,7 +33,7 @@
 }
 
 .top-seller-description {
-  color: var(--white-2); /* Глобальний білий текст */
+  color: var(--white); /* Глобальний білий текст */
   background: transparent; /* Напівпрозорий фон */
   padding: 0 20px;
   letter-spacing: 0.02em;
