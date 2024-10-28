@@ -10,6 +10,9 @@ html {
 
 :root {
   --font-family: "Montserrat", sans-serif;
+  --font-weight-normal: 400; /* Для основного тексту */
+  --font-weight-medium: 500; /* Для підзаголовків */
+  --font-weight-semiBold: 600; /* Для заголовків */
   --black: #111;
   --orange: #fd9222;
   --violet: #1e1823;
@@ -23,7 +26,27 @@ html {
 body {
   background-color: var(--bg-white);
   font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
   color: var(--black);
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semiBold);
+  text-transform: uppercase;
+}
+
+.subtitle,
+.subheading,
+h3,
+h1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
 }
 
 ul {
@@ -37,6 +60,8 @@ a {
 }
 
 button {
+  font: 600 14px var(--font-family);
+  color: var(--white-2);
   cursor: pointer;
 }
 
@@ -47,7 +72,7 @@ img {
 }
 
 .container {
-  width: 320px;
+  width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -64,7 +89,7 @@ img {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .container {
     width: 375px;
     padding: 0 20px;
@@ -98,4 +123,4 @@ img {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-}
+} */

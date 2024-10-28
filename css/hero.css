@@ -1,53 +1,58 @@
 .hero-section {
-  color: var(--white-2); /* Глобальний колір тексту */
+  color: var(--white-2);
+  padding-top: 16px;
 }
 
-.hero-container {
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   background-image: url("../images/chocolate_main-mob-1x.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
-}
-
-.hero-content {
   text-align: center;
-  margin-bottom: 50px;
+  height: 620px;
+  border-radius: 32px;
+  padding: 20px;
+  gap: 32px;
 }
 
 .hero-title {
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 20px;
+  color: var(--white-2);
 }
 
 .hero-buttons {
   display: flex;
-  gap: 10px;
+  gap: 14px;
   justify-content: center;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 12px 28px;
   border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
+  font: 600 14px var(--font-family);
+  color: var(--white-2);
   transition: background 0.3s;
 }
 
 .btn-primary {
-  background-color: var(--orange); /* Глобальний колір для кнопки */
-  color: var(--white);
+  background-color: var(--orange);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--white-2);
   border: 2px solid var(--white-2);
 }
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .scroll-indicator {
@@ -59,13 +64,20 @@
   font-size: 14px;
 }
 
+.scroll-text {
+  font: 500 12px / 1.17 var(--font-family);
+  letter-spacing: -0.03em;
+  color: var(--white-2);
+}
+
 .scroll-icon {
-  width: 24px;
-  height: 24px;
-  margin-top: 5px;
-  border: 2px solid var(--white-2);
+  display: flex;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
   border-radius: 50%;
-  position: relative;
+  background-color: var(--white-2);
 }
 
 .scroll-icon span {
@@ -81,13 +93,19 @@
   animation: scroll 1s infinite;
 }
 
+.scroll-down {
+  fill: var(--orange);
+  animation: scroll 1s infinite;
+  position: relative;
+}
+
 @keyframes scroll {
   0% {
     opacity: 1;
     top: 6px;
   }
   100% {
-    opacity: 0;
+    opacity: 0.1;
     top: 12px;
   }
 }
