@@ -35,6 +35,7 @@
 /* Іконка меню */
 .btn-menu-container {
   display: flex;
+  z-index: 1001;
 }
 
 .vector-input-btn {
@@ -48,11 +49,12 @@
   width: 28px; /* Ширина іконки */
   height: 28px; /* Висота іконки */
   cursor: pointer;
-}
-
-.vector-btn {
   position: relative;
 }
+
+/* .vector-btn {
+  
+} */
 
 .vector-btn,
 .vector-btn::before,
