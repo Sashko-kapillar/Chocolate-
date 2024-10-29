@@ -1,0 +1,140 @@
+.footer-section {
+  color: var(--white-2); /* Глобальний колір тексту */
+}
+
+.footer-container {
+  background-color: var(--violet); /* Глобальний фон */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-description {
+  font: 500 24px / 1.17 var(--font-family);
+  letter-spacing: 0.02em;
+  text-align: start;
+  max-width: 284px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-style: normal;
+}
+
+.footer-contact p,
+.footer-socials p {
+  font-family: inherit;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 14px;
+}
+
+.contact-list {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-link {
+  color: var(--white-2);
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--orange);
+}
+
+/* .footer-socials {
+  display: flex;
+  gap: 15px;
+} */
+
+.footer-social-list {
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  fill: var(--violet);
+  stroke: var(--white-2);
+  transition: stroke 0.3s;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  stroke: var(--orange);
+}
+
+.footer-line {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 335px;
+  height: 0px;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-menu {
+  flex-direction: column;
+  gap: 18px;
+  text-align: start;
+  font: 500 14px / 1.14 var(--font-family);
+  letter-spacing: 0.02em;
+}
+
+.footer-link {
+  color: var(--white-2);
+  transition: color 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--orange);
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribe-input {
+  font: 400 14px var(--font-family);
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+  outline: none;
+  background-color: transparent;
+  padding: 14px 18px;
+  width: 204px;
+}
+
+.subscribe-input:focus {
+  border-color: var(--orange);
+}
+
+.subscribe-button {
+  padding: 14px 26px;
+  color: var(--white-2);
+  background-color: var(--orange);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--white-2);
+  color: var(--orange);
+}

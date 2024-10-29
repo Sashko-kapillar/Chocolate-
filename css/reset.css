@@ -112,6 +112,10 @@ p {
   border: 0;
 }
 
+.text-accent {
+  color: var(--orange); /* Акцентний колір */
+}
+
 /* @media screen and (min-width: 375px) {
   .container {
     width: 375px;

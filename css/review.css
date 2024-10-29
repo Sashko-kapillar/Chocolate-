@@ -1,0 +1,65 @@
+.reviews-section {
+  text-align: center;
+}
+
+.reviews-title {
+  margin-bottom: 72px;
+}
+
+.text-accent {
+  color: var(--orange); /* Глобальний акцентний колір */
+}
+
+.review-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-2);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 16px;
+  padding: 104px 20px 42px;
+  margin-bottom: 32px;
+}
+
+.review-avatar {
+  position: absolute;
+  top: -40px;
+}
+
+.avatar-image {
+  display: flex;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-author {
+  margin: 10px 0 5px;
+  line-height: 1.33;
+}
+
+.review-text {
+  color: rgba(17, 17, 17, 0.7);
+  letter-spacing: 0.02em;
+}
+
+.review-button {
+  display: inline-block;
+  font: 600 14px var(--font-family);
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.review-button:hover,
+.review-button:focus {
+  background-color: var(--orange);
+  color: var(--white-2);
+  outline: none;
+}

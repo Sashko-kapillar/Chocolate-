@@ -33,20 +33,28 @@
   border-radius: 30px;
   font: 600 14px var(--font-family);
   color: var(--white-2);
-  transition: background 0.3s;
 }
 
 .btn-primary {
   background-color: var(--orange);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn-secondary {
   background-color: transparent;
   border: 2px solid var(--white-2);
+  transition: opacity 0.3s ease-in-out;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--white-2);
+  color: var(--orange);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  opacity: 0.6;
 }
 
 .scroll-container {

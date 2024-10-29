@@ -57,4 +57,5 @@
 .product-price:hover,
 .product-price:focus {
   background-color: var(--orange);
+  color: var(--white-2);
 }
