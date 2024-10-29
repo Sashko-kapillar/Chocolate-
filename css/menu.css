@@ -2,7 +2,7 @@
 .side-menu {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 250px;
   height: 100%;
   background-color: var(--violet);
@@ -19,7 +19,7 @@
 
 /* Показує меню при активному чекбоксі */
 .vector-input-btn:checked ~ .side-menu {
-  transform: translateX(0);
+  transform: translate X (0);
 }
 
 .vector-input-btn:checked + .vector-label-btn .vector-btn::before,

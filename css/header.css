@@ -49,12 +49,11 @@
   width: 28px; /* Ширина іконки */
   height: 28px; /* Висота іконки */
   cursor: pointer;
-  position: relative;
 }
 
-/* .vector-btn {
-  
-} */
+.vector-btn {
+  position: relative;
+}
 
 .vector-btn,
 .vector-btn::before,
