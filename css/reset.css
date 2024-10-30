@@ -82,10 +82,31 @@ p {
   line-height: 1.29;
 }
 
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .container {
   width: 375px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
 }
 
 .title {
@@ -93,11 +114,6 @@ p {
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .visually-hidden {

@@ -33,6 +33,9 @@
 
 .how-made-text-container {
   padding: 20px 14px;
+  background-color: var(--white-2);
+  border-radius: 16px;
+  border: none;
 }
 
 .how-made-subtitle {

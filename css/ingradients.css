@@ -12,12 +12,6 @@
   text-align: center;
 }
 
-/* @media (min-width: 768px) {
-  .ingredients-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
 .flip-card {
   perspective: 1000px; /* Додає 3D-ефект для обертання */
 }
@@ -66,7 +60,7 @@
   font: 600 14px / 1.29 var(--font-family);
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 /* .flip-card-back {
@@ -151,4 +145,15 @@
 .card-description {
   font: 400 14px / 1.29 var(--font-family);
   letter-spacing: -0.02em;
+}
+
+@media (min-width: 768px) {
+  .ingredients-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ingradients-title {
+    grid-column: 1 / -1;
+    min-width: 486px;
+  }
 }

@@ -1,6 +1,6 @@
 .hero-section {
   color: var(--white-2);
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .hero-content {
@@ -25,7 +25,8 @@
 .hero-buttons {
   display: flex;
   gap: 14px;
-  justify-content: center;
+  justify-content: start;
+  margin-bottom: 32px;
 }
 
 .btn {
@@ -116,4 +117,35 @@
   fill: var(--orange);
   animation: scroll-animation 1s infinite;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    background-image: url("../images/tab/chocolate_main-tab-1x.png");
+    height: 890px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    text-align: left;
+    max-width: 484px;
+  }
+
+  .hero-content {
+    padding: 40px;
+  }
+
+  .hero-down {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .hero-buttons {
+    margin: 0;
+  }
 }
