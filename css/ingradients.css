@@ -49,9 +49,6 @@
   border-radius: 16px;
 }
 
-.flip-card-front img {
-}
-
 .flip-card-back {
   background-color: var(--white-2); /* Задає колір фону для зворотного боку */
   transform: rotateY(180deg); /* Повертає зворотний бік на 180 градусів */
