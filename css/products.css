@@ -4,12 +4,6 @@
   gap: 30px;
 }
 
-/* @media (min-width: 768px) {
-  .products-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
 .products-title {
   margin-bottom: 2px;
 }
@@ -58,4 +52,14 @@
 .product-price:focus {
   background-color: var(--orange);
   color: var(--white-2);
+}
+
+@media (min-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-title {
+    grid-column: 1 / -1;
+  }
 }

@@ -15,7 +15,7 @@
 .how-made-image-container {
   width: 100%;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 16px;
   margin-bottom: 20px;
 }
 
@@ -23,7 +23,6 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px;
 }
 
 .how-made-description {
@@ -46,5 +45,20 @@
 .how-made-steps-list {
   flex-direction: column;
   list-style: disc;
-  gap: 20px;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-made-text-container,
+  .how-made-image-container {
+    border-radius: 0;
+  }
+
+  .how-made-text-container {
+    padding: 32px;
+  }
+
+  .how-made-subtitle {
+    margin-bottom: 28px;
+  }
 }

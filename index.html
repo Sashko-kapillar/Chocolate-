@@ -399,11 +399,19 @@
 
           <!-- Зображення -->
           <div class="how-made-image-container">
-            <img
-              src="./images/how-made-mob-1x.jpg"
-              alt="Making Chocolate"
-              class="how-made-image"
-            />
+            <picture>
+              <!-- Зображення для планшетів -->
+              <source
+                srcset="./images/tab/how-made-tab-1x.jpg"
+                media="(min-width: 768px)"
+              />
+              <!-- Зображення для мобільних пристроїв -->
+              <img
+                src="./images/how-made-mob-1x.jpg"
+                alt="Making Chocolate"
+                class="how-made-image"
+              />
+            </picture>
           </div>
 
           <!-- Опис процесу -->
@@ -538,7 +546,7 @@
         </div>
       </section>
 
-      <!-- =====   Section seller   ===== -->
+      <!-- =====   Section sellers   ===== -->
 
       <section class="section top-sellers-section">
         <div class="container top-sellers-container">
@@ -546,15 +554,26 @@
           <h2 class="top-sellers-title">Top <span class="text-accent">sellers</span></h2>
       
           <!-- Картка продукту -->
-          <div class="top-seller-card">
-            <div class="top-seller-image-container">
-              <!-- Опис поверх фону -->
-              <p class="top-seller-description">
-                Chocolate with nuts is an incredible combination of two taste pleasures. 
-                When delicate and silky chocolate meets crunchy and tasty nuts, a real culinary pleasure arises.
-              </p>
+          <div class="sellers-card-container">
+            <div class="top-seller-card">
+              <div class="top-seller-image-container card-img">
+                <!-- Опис поверх фону -->
+                <p class="top-seller-description">
+                  Chocolate with nuts is an incredible combination of two taste pleasures. 
+                  When delicate and silky chocolate meets crunchy and tasty nuts, a real culinary pleasure arises.
+                </p>
+              </div>
+              <div class="top-seller-name">Chocolate with huts</div>
             </div>
-            <div class="top-seller-name">Chocolate with huts</div>
+            <div class="top-seller-card">
+              <div class="top-seller-image-container card-hidden card-image-active">
+                <!-- Опис поверх фону -->
+                <p class="top-seller-description">
+                  Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
+                </p>
+              </div>
+              <div class="top-seller-name card-hidden">Chocolate with fruits</div>
+            </div>
           </div>
         </div>
       </section>

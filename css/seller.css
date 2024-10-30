@@ -17,20 +17,27 @@
 .top-seller-card {
   position: relative;
   width: 100%;
-  max-width: 350px;
+  max-width: 344px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .top-seller-image-container {
-  background-image: url("../images/bg-sellers-mob-1x.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 464px;
   display: flex;
   align-items: center;
+}
+
+.card-img {
+  background-image: url("../images/bg-sellers-mob-1x.png");
+}
+
+.card-hidden {
+  display: none;
 }
 
 .top-seller-description {
@@ -44,7 +51,39 @@
   font: 18px / 1.33 var(--font-family);
   font-weight: var(--font-weight-semiBold);
   text-transform: uppercase;
-  padding: 24px 56px;
+  padding: 28px 52px;
   text-align: center;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .top-sellers-container {
+    display: flex;
+  }
+
+  .sellers-card-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .card-img p:first-of-type {
+    display: none;
+  }
+
+  .card-img {
+    background-image: url("../images/tab/sellers-left-tab-1x.png");
+  }
+
+  .card-hidden {
+    display: flex;
+  }
+
+  .card-image-active {
+    background-image: url("../images/tab/sellers-right-tab-1x.png");
+  }
+
+  .top-seller-description {
+    padding: 32px;
+  }
 }
