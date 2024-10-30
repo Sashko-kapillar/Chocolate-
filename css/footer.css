@@ -64,8 +64,6 @@
 }
 
 .social-icon {
-  fill: var(--violet);
-  stroke: var(--white-2);
   transition: stroke 0.3s;
 }
 
@@ -137,4 +135,40 @@
 .subscribe-button:focus {
   background-color: var(--white-2);
   color: var(--orange);
+}
+
+.footer-social-icon {
+  stroke: var(--white-2);
+  fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-line {
+    width: 100%;
+  }
+
+  .footer-menu {
+    flex-direction: row;
+  }
+
+  .footer-socials {
+    order: -1;
+  }
+
+  .footer-description {
+    order: -2;
+    margin-right: 92px;
+  }
+
+  .tab-hidden {
+    display: none;
+  }
+  .footer-nav {
+    margin: auto;
+  }
 }

@@ -106,7 +106,6 @@
 
   .menu-socials {
     flex-direction: row;
-    gap: 12px;
   }
 
   .social-icon {
