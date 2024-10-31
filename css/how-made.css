@@ -1,10 +1,11 @@
 .how-made-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
 .how-made-title {
+  grid-column: 1 / -1;
   margin-bottom: 32px;
 }
 
@@ -57,16 +58,29 @@
     max-width: 316px;
   }
 
-  .how-made-text-container,
-  .how-made-image-container {
-    border-radius: 0;
-  }
-
   .how-made-text-container {
     padding: 32px;
   }
 
   .how-made-subtitle {
     margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-made-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .how-made-image-container {
+    grid-column: 1; /* Лівий стовпець */
+    grid-row: 2;
+  }
+
+  .how-made-text-container {
+    grid-column: 2; /* Лівий стовпець */
+    grid-row: 2;
+    margin-left: 20px;
   }
 }

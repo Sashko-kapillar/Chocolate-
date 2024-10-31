@@ -36,10 +36,6 @@
   background-image: url("../images/bg-sellers-mob-1x.png");
 }
 
-.card-hidden {
-  display: none;
-}
-
 .top-seller-description {
   color: var(--white); /* Глобальний білий текст */
   background: transparent; /* Напівпрозорий фон */
@@ -55,6 +51,11 @@
   text-align: center;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
   letter-spacing: -0.03em;
+}
+
+.seller-card-3,
+.seller-card-2 {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,15 +76,31 @@
     background-image: url("../images/tab/sellers-left-tab-1x.png");
   }
 
-  .card-hidden {
+  .seller-card-2 {
     display: flex;
+    flex-direction: column;
   }
 
-  .card-image-active {
-    background-image: url("../images/tab/sellers-right-tab-1x.png");
+  .seller-img-2 {
+    background-image: url("../images/tab/sellers-center-tab-1x.png");
   }
 
   .top-seller-description {
     padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-seller-card {
+    min-width: 368px;
+  }
+
+  .seller-card-3 {
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .seller-img-3 {
+    background-image: url("../images/desk/sellers-right-desk-1x.png");
   }
 }

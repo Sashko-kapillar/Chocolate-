@@ -6,6 +6,11 @@
   margin-bottom: 72px;
 }
 
+.review-all {
+  display: flex;
+  justify-content: center;
+}
+
 .text-accent {
   color: var(--orange); /* Глобальний акцентний колір */
 }
@@ -64,7 +69,8 @@
   outline: none;
 }
 
-.card-hidden {
+.card-hidden,
+.review-card-3 {
   display: none;
 }
 
@@ -74,11 +80,16 @@
   }
 
   .review-all {
-    display: flex;
     gap: 16px;
   }
 
   .card-hidden {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-card-3 {
     display: flex;
   }
 }

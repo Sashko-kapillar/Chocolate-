@@ -136,6 +136,8 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url("../images/tab/chocolate_main-tab-1x.png");
+    background-position: center;
+    background-size: contain;
     height: 890px;
   }
 
