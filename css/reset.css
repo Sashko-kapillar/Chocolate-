@@ -21,7 +21,7 @@ html {
   --gray: #4c4c4c;
   --white-2: #fff;
   --bg-white: #fafafa;
-  --focus-color: #ff9800;
+  --focus-color: #ccc;
 }
 
 :focus {
