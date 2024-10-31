@@ -178,6 +178,6 @@
     display: none;
   }
   .footer-nav {
-    margin: auto;
+    margin: auto auto auto 0;
   }
 }
