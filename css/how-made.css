@@ -49,6 +49,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .how-made-container {
+    padding: 0 78px;
+  }
+
+  .how-made-subtitle {
+    max-width: 316px;
+  }
+
   .how-made-text-container,
   .how-made-image-container {
     border-radius: 0;

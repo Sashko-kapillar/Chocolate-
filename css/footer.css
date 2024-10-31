@@ -143,14 +143,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .how-made-container {
-    padding: 0 78px;
-  }
-
-  .how-made-subtitle {
-    max-width: 316px;
-  }
-
   .footer-section {
     padding-bottom: 0;
   }
@@ -159,11 +151,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .footer-line {
     width: 100%;
     margin-top: 18px;
+    margin-bottom: -8px;
   }
 
   .footer-menu {
