@@ -21,6 +21,12 @@ html {
   --gray: #4c4c4c;
   --white-2: #fff;
   --bg-white: #fafafa;
+  --focus-color: #ff9800;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--focus-color); /* Заміна обводки на альтернативний стиль */
 }
 
 body {
