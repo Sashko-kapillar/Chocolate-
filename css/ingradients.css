@@ -32,7 +32,7 @@
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   backface-visibility: hidden;
   display: flex;
@@ -52,6 +52,7 @@
   transform: rotateY(180deg); /* Повертає зворотний бік на 180 градусів */
   /* padding: 28px; */
   justify-content: start;
+  overflow: auto;
 }
 
 .card-image {
